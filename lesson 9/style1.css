@@ -1,0 +1,22 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.navbar a {
+    color: #333;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.main {
+    margin-top: 47px;
+}

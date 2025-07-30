@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.site-header {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+
+}
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 15px;
+    width: 300px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+}
+.submenu li {
+    list-style: none;
+    margin: 0;
+}
+.nav-list li:hover .submenu {
+    display: block;
+}
+.nav-list li .submenu a {
+    display: block;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+.nav-list li .submenu a:hover {
+    background-color: #444;
+}
+.nav-list {
+    position: relative;
+}
+
+.nav-list li {
+    position: relative;
+}
+
+.nav-list li .submenu {
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+    z-index: 100;
+}
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.nav-list li {
+    display: inline;
+    margin-right: 20px;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: #fff;
+}
+.nav-list li a:hover {
+    text-decoration: underline;
+}
+.nav-list li a:visited {
+    color: #ccc;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333; 
+    padding: 10px;
+    color: white;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.navbar a:hover {
+    border-radius: 5px;
+}
+.navbar a:active {
+    border-radius: 5px;
+}
+.navbar a:visited {
+    color: #ccc;
+}
+.navbar a:focus {
+    outline: none;
+    box-shadow: 0 0 5px #4CAF50;
+}
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: 10px;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+footer ul li {
+    display: inline;
+    margin-right: 15px;
+}
+footer ul li a{
+    color: white;
+    text-decoration: none;
+}
+@media (max-width: 768px) {
+   a {
+    font-size: 10px;
+   }
+   .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar a {
+        padding: 5px 10px;
+    }
+    .header h1 {
+        font-size: 1em;
+    }
+    .header p {
+        font-size: 10px;
+    }
+    .content, .footer, .blog {
+        padding: 10px;
+    }
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+}
+.fa-solid {
+    font-family: 'Goldman', sans-serif;
+    font-size: 40px;
+    margin-right: 20px;
+}
+.fa-solid:hover {
+    color: #4CAF50;
+}
+.fa-solid:active {
+    color: #45a049;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.container p {
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+@media (max-width: 438px) {
+    .container h1 {
+        font-size: 1.5em;
+    }
+    .container p {
+        font-size: 0.9em;
+    }
+    .navbar {
+        text-align: center~;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
